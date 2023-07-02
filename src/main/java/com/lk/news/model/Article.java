@@ -3,6 +3,7 @@ package com.lk.news.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Data
 @Entity
@@ -17,5 +18,13 @@ public class Article {
     private String summary;
 
     private String content;
+
+    private boolean featured;
+
+    private String category;
+
+    private Date publisheddate;
+
+    private String publishedby;
 
 }

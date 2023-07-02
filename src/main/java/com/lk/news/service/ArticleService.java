@@ -10,4 +10,9 @@ public interface ArticleService {
     List<Article> getAllArticles();
 
     Article getArticleById(Long id) throws ChangeSetPersister.NotFoundException;
+
+    Article clearArticleCache();
+
+    Article createArticle(Article article);
+
 }
